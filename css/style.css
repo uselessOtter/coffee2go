@@ -1979,13 +1979,17 @@ iframe{
     right: 70px;
 }
 
-.cart_item_count input{
+.cart_item_count input[type=text]{
     width: 42px;
     height: 25px;
     border: 1px solid #d2ccc4;
     border-radius: 5px 0 0 5px;
     text-align: center;
-    font: 'OfficinaSansCTT-Bold', 'cuprum', sans-serif;
+    font: 'OfficinaSansCTT-Bold', sans-serif;
+    font-size: 12px;
+    box-shadow: none;
+    background-color: #fff;
+    text-indent: 0px;
     color: #7e6b5d;
 }
 
