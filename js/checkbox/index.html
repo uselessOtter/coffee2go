@@ -1,0 +1,102 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!--<base href="" /><!-- -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>jquery.xdCheckbox Demo </title>
+<meta name="description" content="checkbox plugin for jQuery.">
+<meta name="keywords" content="Плагин jQuery, стилизация checkbox, кастомизация checkbox,jQuery, plugin">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.xdcheckbox.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.xdcheckbox.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script>
+$(function(){
+	$('.xdcheckbox input').xdCheckbox();
+	$('.xdcheckbox1 input').xdCheckbox();
+	$('.xdcheckbox2 input').xdCheckbox({width:32});
+	$('.xdcheckbox1 input:first').xdCheckbox({disabled:true,checked:true});
+})
+</script>
+</head>
+<body>
+<div id="main">
+	<header>
+		<h1>jquery.xdCheckbox Plugin</h1>
+		<p><a href="http://xdan.ru/custom-style-checkbox.html">Page project</a>&nbsp;|&nbsp;<a href="http://xdan.ru/down/file/30">Source</a></p>
+		<p>Custom Styling checkbox plugin for jQuery.</p>
+		<div id="langbox"><a href="index-ru.html">ru</a>&nbsp;|&nbsp;<a href="index.html">eng</a></div>
+	</header>
+<div id="ads1">
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1093220006396549";
+/* for-demo-xdCloudtags */
+google_ad_slot = "8735386465";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div id="ads2">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1093220006396549";
+/* for-demo-xdCloudtags1 */
+google_ad_slot = "9451449747";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+	<p><input type="checkbox" checked> Start Demo without xdCheckbox</p>
+	<p>Add in html page</p><pre  style="width:540px;">
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.xdcheckbox.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery.xdcheckbox.css&quot;/&gt;</pre>
+	<p>To style checkboxes enough of this design</p>
+	<pre style="width:540px;">$(function(){
+	$('input[type=checkbox]').xdCheckbox();
+})</pre>
+	<p class="xdcheckbox">
+	<input type="checkbox" id="checkbox1" checked><label for="checkbox1"> checked</label><br>
+	<input  type="checkbox" checked disabled> Disabled<br/>
+	<input  type="checkbox" > Not checked
+	</p>
+	<p>JavaScript API for change checked and disabled</p>
+	<pre>$(function(){
+	$('input').xdCheckbox();
+	$('input:first').xdCheckbox({disabled:true,checked:true});
+})</pre>
+	<p class="xdcheckbox1">
+		<input type="checkbox" checked>
+		<input  type="Checkbox" checked>
+		<input  type="checkbox" checked>
+		<br>
+		<input type="button" value="checked All" onclick="$(this).parent().find('input[type=checkbox]').xdCheckbox({checked:true})"/>
+		<input type="button" value="unchecked All" onclick="$(this).parent().find('input[type=checkbox]').xdCheckbox({checked:false})"/>
+		<input type="button" value="disabled All" onclick="$(this).parent().find('input[type=checkbox]').xdCheckbox({disabled:true})"/>
+		<input type="button" value="enabled All" onclick="$(this).parent().find('input[type=checkbox]').xdCheckbox({disabled:false})"/>
+	</p>
+	<p>Custom sizing</p>
+	<pre>$(function(){
+	$('input').xdCheckbox({width:32});
+})</pre>
+	<p class="xdcheckbox2">
+		<input type="checkbox" checked>
+		<input  type="checkbox" checked>
+		<input  type="checkbox" checked>
+	</p>
+	<footer>
+		<p>Licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GPL v3</a> Project page <a href="http://xdan.ru/project/xdCheckbox/index.html">Link</a> 
+		Author: <a href="http://xdan.ru/user/profile/leroy/">Chupurnov Valeriy</a> (leroy@xdan.ru)</p>
+	</footer>
+</div>
+</body>
+</html>

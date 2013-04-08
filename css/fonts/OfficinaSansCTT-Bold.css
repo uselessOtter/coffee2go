@@ -1,0 +1,11 @@
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'OfficinaSansCTT-Bold';
+    src: url('OfficinaSansCTT-Bold.eot');
+    src: url('OfficinaSansCTT-Bold.eot?#iefix') format('embedded-opentype'),
+         url('OfficinaSansCTT-Bold.woff') format('woff'),
+         url('OfficinaSansCTT-Bold.ttf') format('truetype'),
+         url('OfficinaSansCTT-Bold.svg#OfficinaSansCTT-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
