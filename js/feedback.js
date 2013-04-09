@@ -40,6 +40,9 @@ var feedback = (function(){
 				data: formData,
 				success: function(data){
 					feedback.drawResult(data);
+					if($('ul').hasClass('form-list')){
+						feedback.displayErrorFields();
+					}
 				}
 			});
 		},
@@ -54,6 +57,14 @@ var feedback = (function(){
 				var formData = $('form').serialize();
 				feedback.sendForm(formData);
 			})
+		},
+
+		displayErrorFields: function(){
+			$('input[type=text]').each(function(i){
+                if($(this).parent().prev().children('.error').text() == "ОШИБКА ВВОДА"){
+                    $(this).toggleClass('field_error');
+                }
+            })
 		}
 	}
 })();

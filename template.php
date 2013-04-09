@@ -142,7 +142,7 @@
                 top: '-15px',
                 left: '0',
                 zIndex: 1500,
-                opacity: '.7',
+                opacity: '.6',
                 display: 'none'
             });
         })

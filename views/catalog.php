@@ -10,10 +10,12 @@
                 <nav class="cat-menu">
                     <ul>
                     <?php foreach($data['catList'] as $menuItem): ?>
-                        <li><a href="<?php echo SITE . '/' . $menuItem['url']; ?>"><?php echo $menuItem['title']; ?></a></li>
+                        <?php if($menuItem['url']): ?>
+                        <li class="<?php echo $menuItem['url']; ?>"><a href="<?php echo SITE . '/' . $menuItem['url']; ?>"><?php echo $menuItem['title']; ?></a></li>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                     </ul>
-                </div>
+                </nav>
 
                 <?php if($data['catList']['isMother']): ?>
                 <div id="filters">

@@ -22,9 +22,10 @@
 			<li><input type="text" name="phone" value="<?php echo $_POST['phone'] ?>"></li>
 			<input type="hidden" name="send" value="Отправить сообщение" />
 		</ul>
-		<input type="submit" name="send" class="enter-btn" value="Отправить сообщение">
+		<div class="clr"></div>
+		<input type="submit" name="send" class="enter-btn" value="Отправить отзыв">
 	</form>
-	<div class="clear">&nbsp;</div>
+	<div class="clr"></div>
 </div>
 
  <?php

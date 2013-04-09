@@ -285,7 +285,7 @@ $(function(){
         // Отображаем ошибку при введении некорректной информации
         function displayErrorFields(){
             $('input[type=text]').each(function(i){
-                if($(this).prev().children().text() == "ОШИБКА ВВОДА"){
+                if($(this).prev().children().text() == "*ОШИБКА ВВОДА"){
                     $(this).toggleClass('field_error');
                 }
             })

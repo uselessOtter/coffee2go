@@ -63,6 +63,8 @@ input{
                       url(../images/active_sweets_main_menu_icon.png),
                       url(../images/active_pkg_main_menu_icon.png),
                       url(../images/active_delete_item_from_cart.jpg),
+                      url(../images/hover-coffee-cat-icon.png),
+                      url(../images/hover-tea-cat-icon.png),
                       url(../images/hover_close_popup_window.jpg);
     background-repeat: no-repeat;
     height: 100px;
@@ -97,21 +99,19 @@ input{
 }
 
 .openFeedback{
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=3.061515884555943e-16, M12=1, M21=-1, M22=3.061515884555943e-16, SizingMethod='auto expand')";
     position: fixed;
-    left: 0;
-    margin: none;
+    left: 0px;
+    margin: 0;
     top: 300px;
     z-index: 10000;
-    width: 130px;
-    height: 40px;
-    margin-left: -45px;
+    display: block;
+    width: 23px;
+    height: 162px;
     margin-top: 60px;
-    background: transparent;
-    border: none;
+    background: url(../images/fb-button.png) 0px 0px no-repeat;
     cursor: pointer;
+    text-indent: -9999px;
+    border: none;
 }
 
 .feedback-window{
@@ -122,17 +122,19 @@ input{
     background-color: #fff;
     padding: 10px 20px 5px 20px;
     width: 500px;
+    border: 5px solid #4c433f;
 }
 
 .feedback-window h2{
     font-family: cuprum, sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     color: #5c4b42;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .feedback-window .auth-text{
-    font-size: 18px;
+    font-size: 16px;
     font-family: cuprum, sans-serif;
     color: #7e6b5d;
 }
@@ -141,8 +143,8 @@ input{
     border: 1px solid #5c4b42;
     border-bottom: none;
     position: absolute;
-    top: 35px;
-    width: 93%;
+    top: 38px;
+    width: 94%;
 }
 
 .feedback-window li{
@@ -165,6 +167,12 @@ input{
 
 .right-fields{
     float: right;
+}
+
+.feedback-window input[type=submit]{
+    margin: 15px 0 10px -76px;
+    position: relative;
+    left: 50%;
 }
 
 /* Header */
@@ -292,7 +300,6 @@ input{
     display: inline-block;
     vertical-align: middle;
     margin: 10px 0 0 53px;
-    font: normal 16px cuprum;
 }
 
 #main_menu li:first-child{
@@ -300,6 +307,7 @@ input{
 }
 
 #main_menu a{
+    font: normal 16px cuprum;
     color: #e3d2b9;
     display: block;
     height: 35px;
@@ -992,8 +1000,59 @@ input{
     color: #7e6b5d;
 }
 
+.cat-menu{
+    background: url(../images/filter_bg.jpg);
+    border:  1px solid #d2ccc4;
+    width: 276px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cat-menu ul{
+    text-align: center;
+}
+
+.cat-menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.cat-menu a{
+    font: normal 16px cuprum;
+    color: #5c4b42;
+    display: block;
+    height: 27px;
+    padding-top: 3px;
+    text-indent: 30px;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.2s linear, color 0.2s linear;
+       -moz-transition: background 0.2s linear, color 0.2s linear;
+         -o-transition: background 0.2s linear, color 0.2s linear;
+            transition: background 0.2s linear, color 0.2s linear;
+}
+
+.cat-menu li.selected, .cat-menu li:hover a{
+    color: #ff6000;
+}
+
+.cat-menu li.kofe a{
+    background-image: url(../images/coffee-cat-icon.png);
+}
+
+.cat-menu li.kofe:hover a{
+    background-image: url(../images/hover-coffee-cat-icon.png);
+}
+
+.cat-menu li.chay a{
+    background-image: url(../images/tea-cat-icon.png);
+    text-indent: 43px;
+}
+
+.cat-menu li.chay:hover a{
+    background-image: url(../images/hover-tea-cat-icon.png);
+}
+
 .help-filters{
-    margin-top: 20px;
     background: rgba(255,255,255,0.7);
     padding: 10px 0px;
     border: 1px dashed rgb(175, 158, 129);
@@ -2041,7 +2100,7 @@ label{
     width: 230px;
 }
 
-.order_form_block .error{
+.error{
     text-indent: 20px;
     background: url(../images/error_input_icon.png) left center no-repeat;
     letter-spacing: 2px;
