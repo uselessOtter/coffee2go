@@ -1584,10 +1584,10 @@ input{
     text-indent: 26px;
     margin: 0;
     padding: 0;
-    padding-top: 8px;
-    font: 14px 'OfficinaSansCTT-Bold', 'cuprum', sans-serif;
+    padding-top: 7px;
+    font: 15px 'OfficinaSansCTT-Bold', 'cuprum', sans-serif;
     color: #5d7731;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
     position: relative;
     top: 0;
     right: 0;
